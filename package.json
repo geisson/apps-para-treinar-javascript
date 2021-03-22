@@ -1,0 +1,28 @@
+{
+  "name": "apps-para-treinar-javascript",
+  "version": "1.0.0",
+  "description": "Repository of projects used to train javaScript.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geisson/apps-para-treinar-javascript.git"
+  },
+  "author": "geisson iuri da silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geisson/apps-para-treinar-javascript/issues"
+  },
+  "homepage": "https://geisson.github.io/apps-para-treinar-javascript/",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1"
+  }
+}
