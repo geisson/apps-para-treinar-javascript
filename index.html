@@ -1,79 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <title>Apps para Treinar JavaScript</title>
 </head>
 
 <body>
-  <header>
-    <h1>Apps para treinar JavaScript</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#projeto-iniciantes">Projetos Iniciais</a></li>
-        <li><a href="#projeto-intermediarios">Projetos Intermediarios</a></li>
-        <li><a href="#projeto-avancados">Projetos avançados</a></li>
-      </ul>
-  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <header>
+          <h1 class='display-3'>Apps para treinar JavaScript</h1>
+          <nav>
+            <ul class="nav">
+              <li class="nav-item"><a href="index.html" class="nav-link" alt="Página Inicial">Home</a></li>
+              <li class="nav-item"><a href="#projeto-iniciantes" class="nav-link" alt="Projetos Iniciais">Iniciais</a>
+              </li>
+              <li class="nav-item"><a href="#projeto-intermediarios" class="nav-link"
+                  alt="Projetos Intermediários">Intermediarios</a></li>
+              <li class="nav-item"><a href="#projeto-avancados" class="nav-link" alt="projetos Avançados">Avançados</a>
+              </li>
+            </ul>
+        </header>
+      </div>
+    </div>
 
-  <main>
-    <section>
-      <h2>Geisson Iuri da Silva</h2>
-      <p>
-        Desenvolvedor front-end treinee <br />
-      </p>
-      <h3>Skills</h3>
-      <ul>
-        <li>JavaScript</li>
-        <li>HTML5</li>
-        <li>Css 3</li>
-        <li>Programação Funcional</li>
-        <li>Git</li>
-        <li>Gui de Estilo Airbnb</li>
-      </ul>
+    <div class="row">
+      <div class="col">
+        <main>
 
-      <h3>Contato</h3>
-      <ul>
-        <li>Email: <a href="mailto:geissoniuri@gmail.com">geissoniuri@gmail.com</a></li>
-        <li>Whatsapp: 94 98100 - 8514</li>
-        <li>Github: <a href="https://github.com/geisson">github.com/geisson</a></li>
-        <li>Linkedin: <a href="https://www.linkedin.com/in/geissoniuri/">linkedin.com/in/geissoniuri/</a></li>
-      </ul>
-    </section>
+          <div class="col">
+            <section>
+              <img
+                src="https://avatars.githubusercontent.com/u/5672403?s=460&u=95987bbc13e725142c6a2979e48561a3d6882527&v=4"
+                alt="Imagem de perfil de Geisson Iuri" class="img-thumbnail" />
+              <h2 class="display-6">
+                Geisson Iuri da Silva
+                <small class="text-muted">Desenvolvedor front-end treinee</small>
+              </h2>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <h3>Skills</h3>
+                </li>
+                <li class="list-group-item">JavaScript</li>
+                <li class="list-group-item">HTML5</li>
+                <li class="list-group-item">Css 3</li>
+                <li class="list-group-item">Programação Funcional</li>
+                <li class="list-group-item">Git</li>
+                <li class="list-group-item">Gui de Estilo Airbnb</li>
+              </ul>
 
-    <section>
-      <article id="projetos-iniciantes">
-        <h2>Projetos Iniciantes</h2>
-        <ul>
-          <li><a href="/projetos/projetos_iniciantes/binary2docimal">Conversor Binario para Decimal</a></li>
-        </ul>
-      </article>
 
-      <article id="projetos-intermediarios">
-        <h2>Projetos intermediarios</h2>
-        <ul>
-          <li>nenhum ainda</li>
-        </ul>
-      </article>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <h3>Contato</h3>
+                </li>
+                <li class="list-group-item">Email: <a href="mailto:geissoniuri@gmail.com">geissoniuri@gmail.com</a></li>
+                <li class="list-group-item">Whatsapp: 94 98100 - 8514</li>
+                <li class="list-group-item">Github: <a href="https://github.com/geisson">github.com/geisson</a></li>
+                <li class="list-group-item">Linkedin: <a
+                    href="https://www.linkedin.com/in/geissoniuri/">linkedin.com/in/geissoniuri/</a></li>
+              </ul>
+            </section>
+          </div>
 
-      <article id="projetos-avancados">
-        <h2>Projetos Avançados</h2>
-        <ul>
-          <li>nenhum projeto ainda</li>
-        </ul>
-      </article>
-    </section>
-  </main>
+          <div class="col">
+            <section>
+              <article id="projetos-iniciantes">
+                <h2>Projetos Iniciantes</h2>
+                <ul>
+                  <li><a href="/projetos/projetos_iniciantes/binary2docimal">Conversor Binario para Decimal</a></li>
+                </ul>
+              </article>
+          </div>
 
-  <footer>
-    <p>Projetos baseados no repositorio: <a href="https://github.com/florinpop17/app-ideas">App Ideas</a> </p>
-    <p>Repositorio do projeto: <a href="https://github.com/geisson/apps-para-treinar-javascript">Apps para Treinar
-        JavaScript</a> </p>
-  </footer>
+          <div class="col">
+            <article id="projetos-intermediarios">
+              <h2>Projetos intermediarios</h2>
+              <ul>
+                <li>nenhum ainda</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col">
+            <article id="projetos-avancados">
+              <h2>Projetos Avançados</h2>
+              <ul>
+                <li>nenhum projeto ainda</li>
+              </ul>
+            </article>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <footer>
+      <p>Projetos baseados no repositorio: <a href="https://github.com/florinpop17/app-ideas">App Ideas</a> </p>
+      <p>Repositorio do projeto: <a href="https://github.com/geisson/apps-para-treinar-javascript">Apps para Treinar
+          JavaScript</a> </p>
+    </footer>
+  </div>
 </body>
 
 </html>
