@@ -11,7 +11,7 @@
   "title-require": true,
   "head-script-disabled": true,
   "attr-value-not-empty": true,
-  "tag-self-close": true,
+  // "tag-self-close": true,
   "doctype-html5": true,
   "id-class-value": "dash",
   "style-disabled": true,
