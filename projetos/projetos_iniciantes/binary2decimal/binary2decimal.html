@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <title>Binario para Decimal</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="row py-3">
+      <div class="col-12">
+        <h1 class="h4">
+          Geisson Iuri <br>
+          <small class="text-muted">Desenvolvedor JavaScript Treinee</small>
+        </h1>
+      </div>
+
+      <div class="col-12">
+        <nav>
+          <ul class="nav border">
+            <li class="nav-item">
+            </li>
+            <li class="nav-item">
+              <a href="mailto:geissoniuri@gmail.com" title="email: geissoniuri@gmail.com" class="nav-link">
+                <i class="bi bi-envelope inline-block"></i>
+                <span class="d-none">Email</span>
+                geissoniuri@gmail.com
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://github.com/geisson" title="Github: github.com/geisson" class="nav-link">
+                <i class="bi bi-github"></i>
+                <span class="d-none">Github</span>
+                github.com/geisson
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.linkedin.com/in/geissoniuri/" title="Linkedin: linkedin.com/in/geissoniuri"
+                class="nav-link">
+                <i class="bi bi-linkedin"></i>
+                <span class="d-none">Linkedin</span>
+                linkedin.com/in/geissoniuri
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <nav class="row">
+      <div class="col-12">
+        <ul class="nav bg-light border">
+          <li class="nav-item">
+            <a href="../../../index.html" class="nav-link" title="Pagina Inicial">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/geisson/apps-para-treinar-javascript" class="nav-link"
+              title="Repositório: Projeto">Repositório
+              projeto</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/geisson/apps-para-treinar-javascript" class="nav-link"
+              title="Repositório Bin2Des">Repositório Bin2des</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="row">
+      <section class="col-12 my-5">
+        <h2 class="display-6"><small>Conversor Binario para Decimal</small></h2>
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="binary-number">Numero Binario</label>
+          <input id="binary-number" type="number" class="form-control" placeholder="Digite apenas 0 e 1"
+            aria-label="Digite apenas 0 e 1" aria-describedby="binary-number">
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+        </div>
+
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="decimal-number">Numero Decimal</label>
+          <input id="decimal-number" type="number" class="form-control" placeholder="Numero Decimal"
+            aria-label="Numero Decimal" aria-describedby="decimal-number" disabled="disabled">
+        </div>
+      </section>
+
+      <section class="col-12 pb-3">
+        <h3 class="h4">Conversor Binario para Decimal <br> <span class="text-muted">Tier 1: iniciante</span></h3>
+        <p>Binário é o sistema numérico no qual todos os computadores digitais são baseados. Portanto, é importante que
+          os desenvolvedores entendam matemática binária ou de base 2. O objetivo do Bin2Dec é fornecer prática e
+          compreensão de como os cálculos binários.</p>
+        <p>Bin2Dec permite que o usuário insira strings de até 8 dígitos binários, 0 e 1, em qualquer sequência e,
+          em seguida, exibe seu equivalente decimal.</p>
+
+        <h4 class="h5">Esse desafio requer que o desenvolvedor que o está implementando siga estas restrições:</h4>
+        <ul>
+          <li>Matrizes não podem ser usadas para conter os dígitos binários inseridos pelo usuário.</li>
+          <li>A determinação do equivalente decimal de um dígito binário particular na sequência deve ser calculada
+            usando uma única função matemática, por exemplo, o logaritmo natural. Depende de você descobrir qual função
+            usar.</li>
+        </ul>
+
+        <h4 class="h5">Ações dos usuários</h4>
+        <ul>
+          <li>O usuário pode inserir até 8 dígitos binários em um campo de entrada</li>
+          <li>O usuário deve ser notificado se algo diferente de 0 ou 1 foi inserido</li>
+          <li>O usuário visualiza os resultados em um único campo de saída contendo o equivalente decimal (base 10) do
+            número binário que foi inserido.</li>
+        </ul>
+
+        <h4 class="h5">Recursos bônus</h4>
+        <ul>
+          <li>O usuário pode inserir um número variável de dígitos binários</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="row">
+      <hr>
+      <p>Projetos baseados no repositorio: <a href="https://github.com/florinpop17/app-ideas"
+          title="App Ideas Collection">App Ideas</a><br>
+        Repositorio do projeto: <a href="https://github.com/geisson/apps-para-treinar-javascript"
+          title="Repositório: apps para Treinar JavaScript">Apps para Treinar
+          JavaScript</a> </p>
+    </footer>
+  </div>
+</body>
+
+</html>
