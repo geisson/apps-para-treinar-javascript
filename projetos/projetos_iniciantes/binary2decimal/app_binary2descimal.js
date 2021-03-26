@@ -10,7 +10,7 @@ inputBinaryNumber.addEventListener('input', (event) => {
   const lastDigitEntered = +valueInputBinaryNumber.substr(-1, 1);
   const valueDecimalNumber = parseInt(valueInputBinaryNumber, 2);
 
-  if (lastDigitEntered !== 0 && lastDigitEntered !== 1) {
+  if (lastDigitEntered > 1) {
     inputBinaryNumber.classList.add('is-invalid');
     invalidNumber.innerHTML = lastDigitEntered;
     return;
