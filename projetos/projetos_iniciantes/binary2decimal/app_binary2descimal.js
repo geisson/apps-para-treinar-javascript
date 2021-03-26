@@ -1,6 +1,5 @@
 const inputBinaryNumber = document.querySelector('#binary-number');
 const inputDecimalNumber = document.querySelector('#decimal-number');
-const invalidFeedback = document.querySelector('[data-js=invalid-feedback]');
 const invalidNumber = document.querySelector(
   '[data-js=display-invalid-number]',
 );
@@ -10,9 +9,15 @@ inputBinaryNumber.addEventListener('input', (event) => {
   const lastDigitEntered = +valueInputBinaryNumber.substr(-1, 1);
   const valueDecimalNumber = parseInt(valueInputBinaryNumber, 2);
 
-  if (lastDigitEntered > 1) {
+  const regex = /([2-9])/;
+  const invalidNumberBinary = regex.test(valueInputBinaryNumber);
+
+  console.log(invalidNumberBinary);
+
+  if (invalidNumberBinary) {
     inputBinaryNumber.classList.add('is-invalid');
     invalidNumber.innerHTML = lastDigitEntered;
+    inputDecimalNumber.value = '';
     return;
   }
 
