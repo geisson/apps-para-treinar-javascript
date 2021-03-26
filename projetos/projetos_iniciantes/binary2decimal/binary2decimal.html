@@ -72,15 +72,15 @@
       </div>
     </nav>
 
-    <main class="row">
-      <section class="col-12 my-5">
-        <h2 class="display-6"><small>Conversor Binario para Decimal</small></h2>
+    <main class="row justify-content-md-center">
+      <section class="col-12 col-md-7 col-lg-4 my-5 border p-4">
+        <h2 class="display-6"><small>Conversor: <br> Binario para Decimal</small></h2>
         <div class="input-group mb-3">
           <label class="input-group-text" for="binary-number">Numero Binario</label>
           <input id="binary-number" type="number" class="form-control" placeholder="Digite apenas 0 e 1"
             aria-label="Digite apenas 0 e 1" aria-describedby="binary-number">
-          <div class="invalid-feedback">
-            Please choose a username.
+          <div class="invalid-feedback" data-js="invalid-feedback">
+            O numéro <span>x</span> não é valido!
           </div>
         </div>
 
@@ -131,6 +131,7 @@
           JavaScript</a> </p>
     </footer>
   </div>
+  <script src="./app_binary2descimal.js"></script>
 </body>
 
 </html>
