@@ -12,8 +12,6 @@ inputBinaryNumber.addEventListener('input', (event) => {
   const regex = /([2-9])/;
   const invalidNumberBinary = regex.test(valueInputBinaryNumber);
 
-  console.log(invalidNumberBinary);
-
   if (invalidNumberBinary) {
     inputBinaryNumber.classList.add('is-invalid');
     invalidNumber.innerHTML = lastDigitEntered;
