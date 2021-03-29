@@ -26,8 +26,6 @@
         <nav>
           <ul class="nav border">
             <li class="nav-item">
-            </li>
-            <li class="nav-item">
               <a href="mailto:geissoniuri@gmail.com" title="email: geissoniuri@gmail.com" class="nav-link">
                 <i class="bi bi-envelope inline-block"></i>
                 <span class="d-none">Email</span>
@@ -77,19 +75,21 @@
       <section class="col-12 border p-4 gy-5">
         <h2 class="h3"><small>Visualizador de Border-Rasius</small></h2>
         <div class="border-radius-container">
-          <div class="border-radius-control border-radius-control-left-top ry">
-            <input type="range">
-          </div>
-          <div class="border-radius-control border-radius-control-right-bottom">
-            <input type="range">
-          </div>
-          <div class="border-radius-control border-radius-control-right-top">
-            <input type="range">
-          </div>
-          <div class="border-radius-control border-radius-control-right-bottom">
-            <input type="range">
-          </div>
-          <div class="border-radius-box">
+          <input type="range" name="top left rx" id="top-left-rx" min="0" max="100" class="range-top-left-rx">
+          <input type="range" name="top left ry" id="top-left-ry" min="0" max="100" class="range-top-left-ry">
+
+          <input type="range" name="top right rx" id="top-right-rx" min="0" max="100" class="range-top-right-rx">
+          <input type="range" name="top right ry" id="top-right-ry" min="0" max="100" class="range-top-left-ry">
+
+          <input type="range" name="bottom left rx" id="bottom-left-rx" min="0" max="100" class="range-bottom-left-rx">
+          <input type="range" name="bottom left ry" id="bottom-left-ry" min="0" max="100" class="range-bottom-left-ry">
+
+          <input type="range" name="bottom right rx" id="bottom-right-rx" min="0" max="100"
+            class="bottom-right-left-rx">
+          <input type="range" name="bottom right ry" id="bottom-right-ry" min="0" max="100"
+            class="bottom-right-left-ry">
+
+          <div class="border-radius-box border bg-light" data-js="border-radius-box">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus nam eius consequatur unde ea maxime, aliquam
             architecto, alias ut aliquid harum officia fugit itaque, ullam vel quis! Beatae, illum laborum!
           </div>

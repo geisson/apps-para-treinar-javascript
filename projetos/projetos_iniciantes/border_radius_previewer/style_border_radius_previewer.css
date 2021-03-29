@@ -1,0 +1,45 @@
+.border-radius-box {
+  width: 20rem;
+  height: 20rem;
+  grid-area: border-box;
+}
+
+.range-top-left-rx {
+  grid-area: range-top-left-rx;
+}
+.range-top-left-ry {
+  grid-area: range-top-left-ry;
+}
+
+.range-top-right-rx {
+  grid-area: range-top-right-rx;
+}
+
+.range-top-right-ry {
+  grid-area: range-top-right-ry;
+}
+
+.range-bottom-left-rx {
+  grid-area: range-bottom-left-ry;
+}
+
+.range-bottom-left-ry {
+  grid-area: range-bottom-left-ry;
+}
+
+.bottom-right-left-rx {
+  grid-area: bottom-right-left-rx;
+}
+
+.bottom-right-left-ry {
+  grid-area: bottom-right-left-ry;
+}
+
+.border-radius-container {
+  display: grid;
+  grid-template:
+    range-top-left-rx border-box range-top-right-rx
+    range-top-left-ry border-box range-top-right-ry
+    range-bottom-left-rx border-box bottom-right-left-rx
+    range-bottom-left-ry border-box bottom-right-left-ry;
+}
