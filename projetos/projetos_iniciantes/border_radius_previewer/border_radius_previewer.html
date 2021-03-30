@@ -73,25 +73,56 @@
 
     <main class="row justify-content-md-center p-4 gy-5">
       <section class="col-12 border p-4 gy-5">
-        <h2 class="h3"><small>Visualizador de Border-Rasius</small></h2>
-        <div class="border-radius-container">
-          <input type="range" name="top left rx" id="top-left-rx" min="0" max="100" class="range-top-left-rx">
-          <input type="range" name="top left ry" id="top-left-ry" min="0" max="100" class="range-top-left-ry">
+        <h2 class="h3 text-center"><small>Visualizador de Border-Rasius</small></h2>
+        <hr>
+        <div class="border-radius-container row">
+          <div class="row p-2 justify-content-center">
+            <div class="col-8 col-lg-10 d-flex justify-content-between flex-wrap">
+              <div class="col-3 col-lg-1">
+                <input type="number" name="top left rx" id="top-left-rx" class="form-control">
+              </div>
+              <div class="col-3 col-lg-1">
+                <input type="number" name="top right rx" id="top-right-rx" class="form-control">
+              </div>
+            </div>
+          </div>
 
-          <input type="range" name="top right rx" id="top-right-rx" min="0" max="100" class="range-top-right-rx">
-          <input type="range" name="top right ry" id="top-right-ry" min="0" max="100" class="range-top-left-ry">
+          <div class="row">
+            <div class="col-2 col-lg-1 d-flex align-content-between flex-wrap">
+              <input type="number" name="top left ry" id="top-left-ry" class="form-control">
+              <input type="number" name="bottom left ry" id="bottom-left-ry" class="form-control">
+            </div>
 
-          <input type="range" name="bottom left rx" id="bottom-left-rx" min="0" max="100" class="range-bottom-left-rx">
-          <input type="range" name="bottom left ry" id="bottom-left-ry" min="0" max="100" class="range-bottom-left-ry">
+            <div class="col-8 col-lg-10 p-4 bg-primary bg-gradient text-white rounded-3" data-js="border-radius-box">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum quidem doloribus ratione
+                adipisci omnis! Corrupti fuga, iste repellat blanditiis molestiae maiores sequi a, totam asperiores enim
+                cumque inventore aut!</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores expedita, incidunt
+                corporis at a saepe numquam recusandae minima consectetur dolorem reiciendis rerum temporibus mollitia?
+                Tempora, reprehenderit et. Ratione, corrupti.</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam eius praesentium officiis neque eos
+                rem facere, voluptatum quo iste eaque modi totam, sunt quae eveniet obcaecati esse molestias maiores
+                suscipit.</p>
+            </div>
 
-          <input type="range" name="bottom right rx" id="bottom-right-rx" min="0" max="100"
-            class="bottom-right-left-rx">
-          <input type="range" name="bottom right ry" id="bottom-right-ry" min="0" max="100"
-            class="bottom-right-left-ry">
+            <div class="col-2 col-lg-1 d-flex align-content-between flex-wrap">
+              <input type="number" name="top right ry" id="top-right-ry" class="form-control">
+              <input type="number" name="bottom right ry" id="bottom-right-ry" class="form-control">
+            </div>
+          </div>
 
-          <div class="border-radius-box border bg-light" data-js="border-radius-box">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus nam eius consequatur unde ea maxime, aliquam
-            architecto, alias ut aliquid harum officia fugit itaque, ullam vel quis! Beatae, illum laborum!
+          <div class="row p-2 justify-content-center">
+            <div class="col-8 col-lg-10  d-flex justify-content-between">
+              <div class="col-3 col-lg-1">
+                <input type="number" name="bottom left rx" id="bottom-left-rx" class="form-control">
+              </div>
+              <div class="col-3 col-lg-1">
+                <button type="button" class="btn btn-primary">Copiar</button>
+              </div>
+              <div class="col-3 col-lg-1">
+                <input type="number" name="bottom right rx" id="bottom-right-rx" class="form-control">
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -1,2 +1,2 @@
-const rangedTopLeftRy = document.querySelector('#top-left-ry');
-console.log(rangedTopLeftRy.value);
+const rangedTopLeftRx = document.querySelector('#top-left-rx');
+console.log(rangedTopLeftRx.value);
