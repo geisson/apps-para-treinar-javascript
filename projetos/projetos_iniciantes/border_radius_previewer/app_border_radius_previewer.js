@@ -11,9 +11,12 @@ const containerBoxBorderRadius = document.querySelector(
   '[data-js=container-box-border-radius]',
 );
 
-console.log(containerBoxBorderRadius);
-console.log(boxBorderRadius);
-console.log(inputTopLeftRx);
+containerBoxBorderRadius.addEventListener('input', (event) => {
+  const targetInputTopLeftRx = inputTopLeftRx.value;
+  const targetInputTopLeftRy = inputTopLeftRy.value;
+  console.log(targetInputTopLeftRx);
+  console.log(targetInputTopLeftRy);
+});
 /* console.log(containerBorderRadius);
 console.log(inputTopLeftRx);
 console.log(inputTopLeftRy);
