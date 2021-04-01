@@ -16,5 +16,8 @@ containerBoxBorderRadius.addEventListener('input', () => {
 
   boxBorderRadius.style.borderRadius = borderRadiusInOrder;
 
-  boxBorderRadius.innerHTML = `border-radius: ${borderRadiusInOrder}`;
+  boxBorderRadius.innerHTML = `
+    border-radius: ${borderRadiusInOrder} <br>
+    -webkit-border-radius: ${borderRadiusInOrder} <br>
+    -moz-border-radius: ${borderRadiusInOrder}`;
 });
