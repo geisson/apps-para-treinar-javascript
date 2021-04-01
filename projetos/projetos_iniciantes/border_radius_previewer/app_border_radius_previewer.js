@@ -12,8 +12,9 @@ const containerBoxBorderRadius = document.querySelector(
 );
 
 containerBoxBorderRadius.addEventListener('input', () => {
-  boxBorderRadius.style.borderTopLeftRadius = `${inputTopLeftRx.value}px ${inputTopLeftRy.value}px `;
-  boxBorderRadius.style.borderTopRightRadius = `${inputTopRightRx.value}px ${inputTopRightRy.value}px `;
-  boxBorderRadius.style.borderBottomLeftRadius = `${inputBottomLeftRx.value}px ${inputBottomLeftRy.value}px `;
-  boxBorderRadius.style.borderBottomRightRadius = `${inputBottomRightRx.value}px ${inputBottomRightRy.value}px `;
+  const borderRadiusInOrder = `${inputTopLeftRx.value}px ${inputTopRightRx.value}px ${inputBottomRightRx.value}px ${inputBottomLeftRx.value}px / ${inputTopLeftRy.value}px ${inputTopRightRy.value}px ${inputBottomRightRy.value}px ${inputBottomLeftRy.value}px`;
+
+  boxBorderRadius.style.borderRadius = borderRadiusInOrder;
+
+  boxBorderRadius.innerHTML = `border-radius: ${borderRadiusInOrder}`;
 });
