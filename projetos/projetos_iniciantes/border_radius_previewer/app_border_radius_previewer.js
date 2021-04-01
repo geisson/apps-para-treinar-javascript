@@ -11,32 +11,9 @@ const containerBoxBorderRadius = document.querySelector(
   '[data-js=container-box-border-radius]',
 );
 
-containerBoxBorderRadius.addEventListener('input', (event) => {
-  const targetInputTopLeftRx = inputTopLeftRx.value;
-  const targetInputTopLeftRy = inputTopLeftRy.value;
-  console.log(targetInputTopLeftRx);
-  console.log(targetInputTopLeftRy);
+containerBoxBorderRadius.addEventListener('input', () => {
+  boxBorderRadius.style.borderTopLeftRadius = `${inputTopLeftRx.value}px ${inputTopLeftRy.value}px `;
+  boxBorderRadius.style.borderTopRightRadius = `${inputTopRightRx.value}px ${inputTopRightRy.value}px `;
+  boxBorderRadius.style.borderBottomLeftRadius = `${inputBottomLeftRx.value}px ${inputBottomLeftRy.value}px `;
+  boxBorderRadius.style.borderBottomRightRadius = `${inputBottomRightRx.value}px ${inputBottomRightRy.value}px `;
 });
-/* console.log(containerBorderRadius);
-console.log(inputTopLeftRx);
-console.log(inputTopLeftRy);
-console.log(inputTopRightRx);
-console.log(inputTopRightRy);
-console.log(inputBottomLeftRx);
-console.log(inputBottomLeftRy);
-console.log(inputBottomRightRx);
-console.log(inputBottomRightRy);
- */
-/* inputTopLeftRx.addEventListener('input', (event) => {
-  const borderRadiusValue = event.target.value;
-  containerBorderRadius.style.borderTopLeftRadius = `${borderRadiusValue}%`;
-  const codeCss = `
-      <div>
-        -webkit-border-top-left-radius: ${borderRadiusValue}%;
-        -moz-border-radius-topleft: ${borderRadiusValue}%;
-        border-top-left-radius: ${borderRadiusValue}%;
-      </div>
-      `;
-
-  containerBorderRadius.append(codeCss);
-}); */
