@@ -13,23 +13,21 @@ const containerBoxBorderRadius = document.querySelector(
 const copyButton = document.querySelector('[data-js=copy-button]');
 const inputCode = document.querySelector('#input-code');
 
-containerBoxBorderRadius.addEventListener('input', () => {
+const processCssCodeBorderRadius = () => {
   const borderRadiusInOrder = `${inputTopLeftRx.value}px ${inputTopRightRx.value}px ${inputBottomRightRx.value}px ${inputBottomLeftRx.value}px / ${inputTopLeftRy.value}px ${inputTopRightRy.value}px ${inputBottomRightRy.value}px ${inputBottomLeftRy.value}px`;
 
   boxBorderRadius.style.borderRadius = borderRadiusInOrder;
 
   inputCode.value = `border-radius: ${borderRadiusInOrder};`;
-});
+};
 
-copyButton.addEventListener('click', async () => {
+const copyText = async () => {
   if (!navigator.clipboard) return;
 
   try {
     const codeBorderRadius = inputCode.value;
 
-    if (!codeBorderRadius) {
-      return;
-    }
+    if (!codeBorderRadius) return;
 
     inputCode.focus();
     inputCode.select();
@@ -38,4 +36,7 @@ copyButton.addEventListener('click', async () => {
   } catch (error) {
     inputCode.classList.add('is-invalid');
   }
-});
+};
+
+containerBoxBorderRadius.addEventListener('input', processCssCodeBorderRadius);
+copyButton.addEventListener('click', copyText);
