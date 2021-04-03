@@ -18,11 +18,28 @@ containerBoxBorderRadius.addEventListener('input', () => {
 
   boxBorderRadius.style.borderRadius = borderRadiusInOrder;
 
-  inputCode.value = `
-    border-radius: ${borderRadiusInOrder};`;
+  inputCode.value = `border-radius: ${borderRadiusInOrder};`;
 });
 
-copyButton.addEventListener('click', () => {
-  inputCode.select();
-  console.log(inputCode.value);
+copyButton.addEventListener('click', async () => {
+  if (!navigator.clipboard) return;
+
+  try {
+    const codeBorderRadius = inputCode.value;
+
+    if (!codeBorderRadius) {
+      return;
+    }
+
+    inputCode.classList.add('is-valid');
+
+    await navigator.clipboard.writeText(codeBorderRadius);
+  } catch (error) {
+    inputCode.classList.add('is-invalid');
+  }
+});
+
+inputCode.addEventListener('change', () => {
+  console.log(`valor: ${inputCode.value}`);
+  inputCode.classList.remove('is-valid');
 });
