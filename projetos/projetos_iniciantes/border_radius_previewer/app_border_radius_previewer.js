@@ -31,15 +31,11 @@ copyButton.addEventListener('click', async () => {
       return;
     }
 
-    inputCode.classList.add('is-valid');
+    inputCode.focus();
+    inputCode.select();
 
     await navigator.clipboard.writeText(codeBorderRadius);
   } catch (error) {
     inputCode.classList.add('is-invalid');
   }
-});
-
-inputCode.addEventListener('change', () => {
-  console.log(`valor: ${inputCode.value}`);
-  inputCode.classList.remove('is-valid');
 });
