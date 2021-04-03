@@ -10,14 +10,19 @@ const boxBorderRadius = document.querySelector('[data-js=box-border-radius]');
 const containerBoxBorderRadius = document.querySelector(
   '[data-js=container-box-border-radius]',
 );
+const copyButton = document.querySelector('[data-js=copy-button]');
+const inputCode = document.querySelector('#input-code');
 
 containerBoxBorderRadius.addEventListener('input', () => {
   const borderRadiusInOrder = `${inputTopLeftRx.value}px ${inputTopRightRx.value}px ${inputBottomRightRx.value}px ${inputBottomLeftRx.value}px / ${inputTopLeftRy.value}px ${inputTopRightRy.value}px ${inputBottomRightRy.value}px ${inputBottomLeftRy.value}px`;
 
   boxBorderRadius.style.borderRadius = borderRadiusInOrder;
 
-  boxBorderRadius.innerHTML = `
-    border-radius: ${borderRadiusInOrder} <br>
-    -webkit-border-radius: ${borderRadiusInOrder} <br>
-    -moz-border-radius: ${borderRadiusInOrder}`;
+  inputCode.value = `
+    border-radius: ${borderRadiusInOrder};`;
+});
+
+copyButton.addEventListener('click', () => {
+  inputCode.select();
+  console.log(inputCode.value);
 });

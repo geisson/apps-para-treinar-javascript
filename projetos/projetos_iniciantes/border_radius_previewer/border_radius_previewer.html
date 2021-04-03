@@ -93,8 +93,10 @@
               <input type="number" name="bottom left ry" id="bottom-left-ry" value="0" class="form-control">
             </div>
 
-            <div class="col-8 col-lg-10 p-4 bg-primary bg-gradient text-white" data-js="box-border-radius">
-
+            <div class="col-8 col-lg-10 ">
+              <div class="row d-flex justify-content-center">
+                <div class="bg-primary bg-gradient box-border-radius" data-js="box-border-radius"></div>
+              </div>
             </div>
 
             <div class="col-2 col-lg-1 d-flex align-content-between flex-wrap">
@@ -108,12 +110,19 @@
               <div class="col-3 col-lg-1">
                 <input type="number" name="bottom left rx" id="bottom-left-rx" value="0" class="form-control">
               </div>
-              <div class="col-3 col-lg-1">
-                <button type="button" class="btn btn-primary">Copiar</button>
-              </div>
+
               <div class="col-3 col-lg-1">
                 <input type="number" name="bottom right rx" id="bottom-right-rx" value="0" class="form-control">
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-lg-6 p-3">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="copie o código" id="input-code">
+              <button type="button" class="btn btn-primary" data-js="copy-button">Copiar</button>
             </div>
           </div>
         </div>
