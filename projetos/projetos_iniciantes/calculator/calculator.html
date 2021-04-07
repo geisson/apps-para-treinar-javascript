@@ -14,14 +14,55 @@
 
 <body>
   <div class="container">
-
-
     <main class="row justify-content-md-center">
-      <section class="col-12 border">
-        <h2 class="h3 text-center"><small>Calculadora</small></h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reprehenderit odit maiores tempore sunt
-          cupiditate nobis facere non. Veritatis quasi cupiditate dolor cum voluptatibus tempore optio ex nobis quod
-          eligendi?</p>
+      <section class="col-12 col-md-6 col-lg-4 border py-2 my-2">
+        <h2 class="text-center display-6"><small>Calculadora</small></h2>
+
+        <input type="text" class="form-control py-3 my-2 rounded-0" data-js="calculator-visor">
+
+        <div class="calculator-keyboard" data-js="calculator-keyboard">
+          <div class="d-flex">
+            <input type="submit" class="form-control py-3 rounded-0 border-white bg-info text-light" value="c">
+            <input type="submit" class="form-control py-3 rounded-0 border-white bg-secondary text-light" value="+/-"
+              data-operator="change-sign">
+            <input type="submit" class="form-control py-3 rounded-0 border-white bg-secondary text-light" value="%"
+              data-operator="percentage">
+            <input type="submit" class="form-control py-3 rounded-0 border-white bg-secondary text-light" value="/"
+              data-operator="division">
+          </div>
+
+          <div class="d-flex">
+            <input type="submit" class="form-control py-3 rounded-0 border-white" value="7">
+            <input type="submit" class="form-control py-3 rounded-0 border-white" value="8">
+            <input type="submit" class="form-control py-3 rounded-0 border-white" value="9">
+            <input type="submit" class="form-control py-3 rounded-0 border-white bg-secondary text-light" value="x"
+              data-operator="multiplication">
+          </div>
+
+          <div class="d-flex">
+            <input type="submit" class="form-control py-3 rounded-0 border-white" value="4">
+            <input type="submit" class="form-control py-3 rounded-0 border-white" value="5">
+            <input type="submit" class="form-control py-3 rounded-0 border-white" value="6">
+            <input type="submit" class="form-control py-3 rounded-0 border-white bg-secondary text-light" value="-"
+              data-operator="subtraction">
+          </div>
+
+          <div class="d-flex">
+            <input type="submit" class="form-control py-3 rounded-0 border-white" value="1">
+            <input type="submit" class="form-control py-3 rounded-0 border-white" value="2">
+            <input type="submit" class="form-control py-3 rounded-0 border-white" value="3">
+            <input type="submit" class="form-control py-3 rounded-0 border-white bg-secondary text-light" value="+"
+              data-operator="addition">
+          </div>
+
+          <div class="d-flex">
+            <input type="submit" class="form-control py-3 rounded-0 border-white bg-info text-light" value="ce">
+            <input type="submit" class="form-control py-3 rounded-0 border-white" value="0">
+            <input type="submit" class="form-control py-3 rounded-0 border-white" value=".">
+            <input type="submit" class="form-control py-3 rounded-0 border-white bg-primary text-light" value="="
+              data-operator="equal">
+          </div>
+        </div>
       </section>
     </main>
 
